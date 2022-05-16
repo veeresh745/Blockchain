@@ -13,10 +13,11 @@ contract WillDecision{
         }
 
     }
+    //Initializing wallet balance to initially 10
     uint public walletBalance = 10;
     function transferAmount() public returns(uint){
         if(isAlive){
-            walletBalance = walletBalance + 10;
+            walletBalance = walletBalance + 10;    //if the person is alive then the will amount will gets transferred only once to the son/daughter
             return walletBalance;
         }
         else{
